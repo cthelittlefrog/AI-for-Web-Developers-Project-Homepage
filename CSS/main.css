@@ -1,0 +1,956 @@
+/* Candice Patterson
+20 May 2026
+AI for Web Developers Module 3: Prepare files for Netlify deployment
+CSS creation using ChatGPT and hands-on changes */
+
+/* Imports the Rubik Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;600;700&display=swap');
+/* Imports a fancy Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&display=swap'); /* Styles the full page */
+
+
+/* html/css creation with ChatGPT Module 1 */
+body {
+    background-color: #f4f4f4; /* Light gray background */
+    font-family: Arial, sans-serif; /* Clean readable font */
+    margin: 0; /* Removes default browser spacing */
+    color: #333333; /* Dark text color */
+}
+
+/* TOP NAVIGATION BAR */
+.navbar {
+    background-color: #24292d; /* Dark navigation background */
+    padding: 15px 30px; /* Space inside navigation */
+    overflow: hidden; /* Prevents layout issues */
+    position: sticky;
+    top: 0;
+}
+
+/* Website title/logo */
+.logo {
+    color: white; /* White text */
+    font-size: 22px; /* Larger text */
+    font-weight: bold; /* Makes text bold */
+    float: left; /* Moves logo to left side */
+}
+
+/* Navigation list */
+.nav-links {
+    list-style-type: none; /* Removes bullet points */
+    margin: 0; /* Removes default spacing */
+    padding: 0; /* Removes default spacing */
+    float: right; /* Moves links to right side */
+}
+
+/* Navigation list items */
+.nav-links li {
+    display: inline-block; /* Places links side by side */
+    margin-left: 20px; /* Space between links */
+}
+
+/* Navigation links */
+.nav-links a {
+    color: white; /* White text */
+    text-decoration: none; /* Removes underline */
+    font-size: 16px; /* Text size */
+}
+
+/* Navigation hover effect */
+.nav-links a:hover {
+    color: #58a6ff; /* Blue hover color */
+}
+
+/* HERO SECTION */
+.hero-section {
+    text-align: center; /* Centers content */
+    padding: 60px 20px; /* Adds vertical spacing */
+}
+
+/* Main page title */
+.hero-section h1 {
+    margin-bottom: 10px; /* Space below heading */
+    font-size: 40px; /* Larger title */
+}
+
+/* Hero paragraph */
+.hero-section p {
+    font-size: 18px; /* Text size */
+    color: #666666; /* Softer text color */
+}
+
+/* PROJECT SECTIONS */
+.project-section {
+    background-color: white; /* White section background */
+    margin: 20px auto; /* Space between sections */
+    padding: 30px; /* Inner spacing */
+    width: 80%; /* Section width */
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+/* Project titles */
+.project-section h2 {
+    margin-top: 0; /* Removes extra top spacing */
+}
+
+/* Module 1 Button Creation Project 1 */
+/* Centers the button */
+.button-container {
+    text-align: center; /* Horizontally centers button */
+    margin-top: 20px; /* Space above button */
+}
+
+/* Twitter button */
+.twitter-button {
+    background-color: #24292d; /* Dark button background */
+    color: white; /* White text */
+    border: none; /* Removes border */
+    border-radius: 30px; /* Rounded corners */
+    padding: 15px 30px; /* Space inside button */
+    font-size: 16px; /* Text size */
+    cursor: pointer; /* Pointer cursor */
+    transition: background-color 0.3s ease; /* Smooth animation */
+    margin: 10px; /* Space around each button */
+}
+
+/* Hover effect */
+.twitter-button:hover {
+    background-color: #3a4147; /* Brighter hover color */
+}
+
+/* Click effect */
+.twitter-button:active {
+    background-color: #4d5760; /* Brightest click color */
+}
+
+/* Changed button */
+.changed-button {
+    background-color: #2ea44f; /* Dark button background-- changed */
+    color: white; /* White text */
+    border: none; /* Removes border */
+    border-radius: 0; /* Rounded corners-- changed */
+    padding: 15px 30px; /* Space inside button */
+    font-size: 16px; /* Text size */
+    cursor: pointer; /* Pointer cursor */
+    transition: background-color 0.3s ease; /* Smooth animation */
+    margin: 10px; /* Space around each button */
+}
+
+/* Hover effect */
+.changed-button:hover {
+    background-color: #2c974b; /* Brighter hover color */
+}
+
+/* Click effect */
+.changed-button:active {
+    background-color: #298e46; /* Brightest click color */
+}
+
+/* Module 1 Project 2 */
+/* Create a Hero Section */
+
+/* HoverChair hero section changed to SmoothieBowl */
+.hero-chair {
+    background: linear-gradient(to bottom, #fff9c4, #bbdefb); /* Bright summer gradient */
+    text-align: center; /* Centers all content */
+    padding: 60px 20px; /* Adds space inside section */
+    border-radius: 16px; /* Rounded corners */
+}
+
+/* Chair image */
+.chair-image {
+    width: 180px; /* Controls image size */
+    border-radius: 90px; /* Rounds image corners */
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15); /* Soft shadow */
+    margin-bottom: 25px; /* Space below image */
+}
+
+/* Main heading */
+.hero-heading {
+    font-family: 'Rubik', sans-serif; /* Uses Rubik font */
+    font-size: 48px; /* Large heading text */
+    color: #1565c0; /* Bright orange color */
+    margin-bottom: 10px; /* Space below heading */
+}
+
+/* Subheading */
+.hero-subheading {
+    font-size: 24px; /* Medium text size */
+    color: #ff4fa3; /* Warm summer orange */
+    margin-bottom: 20px; /* Space below subheading */
+}
+
+/* Description paragraph */
+.hero-description {
+    font-size: 18px; /* Readable paragraph size */
+    color: #555555; /* Soft dark gray text */
+    max-width: 600px; /* Limits paragraph width */
+    margin: 0 auto 30px auto; /* Centers paragraph with bottom spacing */
+    line-height: 1.6; /* Improves readability */
+}
+
+/* Call to action button */
+.hero-button {
+    display: inline-block; /* Allows padding and sizing */
+    background-color: #ff4fa3; /* Bright orange button */
+    color: white; /* White text */
+    text-decoration: none; /* Removes underline */
+    padding: 15px 30px; /* Space inside button */
+    border-radius: 30px; /* Rounded button */
+    font-size: 18px; /* Button text size */
+    transition: background-color 0.3s ease; /* Smooth hover animation */
+}
+
+/* Button hover effect */
+.hero-button:hover {
+    background-color: #ff73b5; /* Brighter orange on hover */
+}
+
+/* Button click effect */
+.hero-button:active {
+    background-color: #e63e8c; /* Darker orange when clicked */
+}
+
+/* Module 1 Project 3 */
+/* LevelApp container */
+.levelapp-container {
+    background: linear-gradient(to bottom, #161b22, #0d1117); /* Dark gaming background */
+    padding: 50px 30px; /* Space inside section */
+    border-radius: 18px; /* Rounded corners */
+    text-align: center; /* Centers content */
+    border: 2px solid #7c3aed; /* Neon purple border */
+    box-shadow: 0 0 20px rgba(124, 58, 237, 0.3); /* Purple glow */
+}
+
+/* Main heading */
+.levelapp-heading {
+    font-size: 38px; /* Large heading */
+    color: #00bfff; /* Neon blue */
+    margin-bottom: 20px; /* Space below heading */
+    /*text-shadow: 0 0 10px rgba(88, 166, 255, 0.6); /* Blue glow */
+}
+
+/* Description paragraph */
+.levelapp-description {
+    font-size: 18px; /* Readable text */
+    color: #c9d1d9; /* Light gray text */
+    line-height: 1.7; /* More reading space */
+    max-width: 700px; /* Limits paragraph width */
+    margin: 0 auto 30px auto; /* Centers paragraph */
+}
+
+/* Form container */
+.levelapp-form {
+    margin-top: 20px; /* Space above form */
+}
+
+/* Email input field */
+.levelapp-input {
+    width: 60%; /* Input width */
+    max-width: 350px; /* Prevents oversized input */
+    padding: 15px; /* Space inside input */
+    background-color: #21262d; /* Dark input background */
+    color: white; /* White text */
+    border: 2px solid #58a6ff; /* Neon blue border */
+    border-radius: 12px; /* Rounded corners */
+    font-size: 16px; /* Text size */
+    margin-bottom: 20px; /* Space below input */
+}
+
+/* Placeholder text */
+.levelapp-input::placeholder {
+    color: #8b949e; /* Soft gray placeholder */
+}
+
+/* Submit button */
+.levelapp-button {
+    display: inline-block; /* Allows spacing */
+    background: linear-gradient(to right, #7c3aed, #ec4899); /* Purple to pink gradient */
+    color: white; /* White text */
+    border: none; /* Removes border */
+    border-radius: 30px; /* Rounded button */
+    padding: 15px 35px; /* Space inside button */
+    font-size: 18px; /* Button text size */
+    font-weight: bold; /* Bold text */
+    cursor: pointer; /* Pointer cursor */
+    transition: transform 0.2s ease; /* Smooth animation */
+    box-shadow: 0 0 15px rgba(236, 72, 153, 0.4); /* Pink glow */
+}
+
+/* Button hover effect */
+.levelapp-button:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Button click effect */
+.levelapp-button:active {
+    transform: scale(0.98); /* Small press effect */
+}
+
+/* LevelApp image- added later and downloaded from ChatGPT */
+.levelapp-image {
+    width: 180px; /* Controls image size */
+    border-radius: 20px; /* Rounded corners */
+    margin-bottom: 25px; /* Space below image */
+    box-shadow: 0 0 20px rgba(88, 166, 255, 0.4); /* Neon blue glow */
+}
+
+/* Module 2 Project 4 */
+
+/* Art Gala container */
+.artgala-container {
+    background: linear-gradient(to bottom, #1f102b, #402050); /* Dark artistic gradient */
+    padding: 50px 25px; /* Space inside section */
+    border-radius: 20px; /* Rounded corners */
+    text-align: center; /* Centers content */
+    color: white; /* White text */
+}
+
+/* Main heading */
+.artgala-heading {
+    font-size: 42px; /* Large heading */
+    color: #f7d774; /* Gold color */
+    margin-bottom: 10px; /* Space below heading */
+}
+
+/* Event date */
+.artgala-date {
+    font-family: 'Cormorant Garamond', serif; /* Fancy lettering */
+    font-size: 32px; /* Larger date text */
+    color: #ffb3d9; /* Soft pink */
+    margin-bottom: 25px; /* Space below date */
+    letter-spacing: 2px; /* Adds elegant spacing */
+}
+
+/* Description paragraph */
+.artgala-description {
+    font-size: 18px; /* Readable text size */
+    line-height: 1.7; /* Improves readability */
+    max-width: 650px; /* Limits paragraph width */
+    margin: 0 auto 35px auto; /* Centers paragraph */
+    color: #f4e8ff; /* Soft light purple */
+}
+
+/* RSVP form */
+.rsvp-form {
+    display: flex; /* Places items in a row */
+    flex-direction: column; /* Stacks items vertically */
+    gap: 15px; /* Space between form elements */
+    max-width: 400px; /* Limits form width */
+    margin: 0 auto; /* Centers form */
+}
+
+/* Email input */
+.rsvp-input {
+    padding: 15px; /* Space inside input */
+    border: none; /* Removes border */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 16px; /* Text size */
+}
+
+/* Dropdown menu */
+.rsvp-select {
+    padding: 15px; /* Space inside dropdown */
+    border: none; /* Removes border */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 16px; /* Text size */
+}
+
+/* RSVP button */
+.rsvp-button {
+    background-color: #f7d774; /* Gold button */
+    color: #1f102b; /* Dark text */
+    border: none; /* Removes border */
+    border-radius: 30px; /* Rounded button */
+    padding: 15px; /* Space inside button */
+    font-size: 18px; /* Larger text */
+    font-weight: bold; /* Bold text */
+    cursor: pointer; /* Pointer cursor */
+    transition: background-color 0.3s ease; /* Smooth hover animation */
+}
+
+/* Button hover effect */
+.rsvp-button:hover {
+    background-color: #ffe89c; /* Lighter gold */
+}
+
+/* Hidden confirmation message */
+.confirmation-message {
+    display: none; /* Hidden by default */
+    margin-top: 30px; /* Space above message */
+    font-size: 22px; /* Larger text */
+    color: #ffb3d9; /* Pink message text */
+}
+
+/* Background image shown after successful RSVP */
+.party-background {
+    background-image: url("https://media.giphy.com/media/l2JHPB58MjfV8W3K0/giphy.gif"); /* Section background image */
+    background-size: cover; /* Fills the section */
+    background-position: center; /* Centers image */
+    background-repeat: no-repeat; /* Prevents repeating */
+}
+
+/* Module 4 PROJECT 5 */
+button {
+    background-color: #006bb3;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #005699;
+}
+
+#score {
+    font-size: 32px;
+    margin: 20px 0;
+}
+
+#timer {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* =========================
+   GAME BOARD
+========================= */
+
+.game-board {
+    display: grid;
+
+    /* Mobile-first responsive columns */
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 12px;
+
+    width: 100%;
+    max-width: 500px;
+
+    margin: 20px auto;
+    padding: 10px;
+
+    box-sizing: border-box;
+}
+
+/* =========================
+   HOLES
+========================= */
+
+.hole {
+
+    /* Makes perfectly square holes */
+    aspect-ratio: 1 / 1;
+
+    width: 100%;
+
+    border-radius: 50%;
+
+    background-color: #005699;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+    overflow: hidden;
+
+    box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.2);
+
+    /* Better mobile tapping */
+    touch-action: manipulation;
+}
+
+/* =========================
+   IMAGES
+========================= */
+
+.hole img {
+    width: 55%;
+    height: 55%;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+
+    transition: transform 0.2s ease-in-out;
+
+    transform: scale(0);
+
+    cursor: pointer;
+
+    /* Prevent accidental image dragging */
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+/* Active image animation */
+
+.hole.active img {
+    transform: scale(1.1);
+}
+
+/* =========================
+   TABLET+
+========================= */
+
+@media (min-width: 768px) {
+
+    .game-board {
+        gap: 20px;
+        max-width: 700px;
+    }
+}
+
+/* =========================
+   LARGE DESKTOP
+========================= */
+
+@media (min-width: 1200px) {
+
+    .game-board {
+        max-width: 800px;
+    }
+}
+
+.project-game-header {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #00bfff, #0077b3);
+    border-radius: 30px;
+
+    text-align: center;
+
+    color: white;
+
+    padding: 60px 20px;
+}
+
+.hole img.clicked {
+    border: 4px solid tomato;
+}
+
+/* Module 4 PROJECT 6 */
+/* =========================
+   SECTION STYLING
+========================= */
+
+.project-slider-section {
+    width: 100%;
+    padding: 60px 20px;
+    background: #111;
+    color: white;
+    text-align: center;
+    box-sizing: border-box;
+    border-radius: 30px;
+}
+
+.slider-title {
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+/* =========================
+   SLIDER CONTAINER
+========================= */
+
+.slider-container {
+    position: relative;
+    max-width: 900px;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+/* =========================
+   INDIVIDUAL SLIDES
+========================= */
+
+.slide {
+    display: none;
+    position: relative;
+}
+
+/* Active slide */
+.slide.active {
+    display: block;
+}
+
+/* =========================
+   IMAGE STYLING
+========================= */
+
+.slide img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+
+    /* Keeps images proportional */
+    display: block;
+}
+
+/* =========================
+   OVERLAY CONTENT
+========================= */
+
+.slide-content {
+    position: absolute;
+
+    /* Places overlay on top of image */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+
+    padding: 25px;
+
+    /* Transparent dark background */
+    background: rgba(0, 0, 0, 0.75);
+
+    box-sizing: border-box;
+}
+
+.slide-content h3 {
+    margin-bottom: 10px;
+    font-size: 2rem;
+}
+
+.slide-content p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* =========================
+   DOT NAVIGATION
+========================= */
+
+.dots-container {
+    margin-top: 20px;
+}
+
+/* Individual dots */
+.dot {
+    height: 15px;
+    width: 15px;
+
+    margin: 0 5px;
+
+    background-color: #777;
+
+    border-radius: 50%;
+
+    display: inline-block;
+
+    cursor: pointer;
+
+    transition: background-color 0.3s ease;
+}
+
+/* Active dot */
+.active-dot {
+    background-color: white;
+}
+
+/* Hover effect */
+.dot:hover {
+    background-color: #ccc;
+}
+
+/* =========================
+   FADE ANIMATION
+========================= */
+
+.fade {
+    animation: fadeEffect 0.8s;
+}
+
+@keyframes fadeEffect {
+    from {
+        opacity: 0.4;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+
+    .slide img {
+        height: 300px;
+    }
+
+    .slide-content h3 {
+        font-size: 1.5rem;
+    }
+
+    .slide-content p {
+        font-size: 0.9rem;
+    }
+}
+/* Module 4 Webpage planning */
+/* Shared container */
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    padding: 80px 0;
+}
+
+/* =========================
+   SKILLS SECTION
+========================= */
+
+#skills {
+    padding: 80px 0;
+    background-color: #111;
+    color: white;
+}
+
+/* Section Heading */
+
+#skills h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 2.5rem;
+}
+
+/* =========================
+   SKILLS GRID
+========================= */
+
+.skills-grid {
+    display: grid;
+
+    /* Responsive columns */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+    gap: 30px;
+}
+
+/* =========================
+   SKILL CARDS
+========================= */
+
+.skill-card {
+    background-color: #1e1e1e;
+
+    padding: 25px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+
+    transition: transform 0.3s ease;
+}
+
+/* Hover Effect */
+
+.skill-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Skill Title */
+
+.skill-card h3 {
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+/* Skill Description */
+
+.skill-card p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+/* =========================
+   PROGRESS BAR
+========================= */
+
+.progress-bar {
+    width: 100%;
+    height: 25px;
+
+    background-color: #333;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+}
+
+/* Actual Progress Fill */
+
+.progress {
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 0.9rem;
+    font-weight: bold;
+
+    color: white;
+
+    border-radius: 20px;
+}
+
+/* Individual Skill Percentages */
+
+.html-progress {
+    width: 90%;
+    background-color: #e44d26;
+}
+
+.css-progress {
+    width: 85%;
+    background-color: #264de4;
+}
+
+.js-progress {
+    width: 80%;
+    background-color: #f0db4f;
+    color: black;
+}
+
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+
+    #skills h2 {
+        font-size: 2rem;
+    }
+
+    .skill-card {
+        padding: 20px;
+    }
+}
+
+/* =========================
+   ABOUT SECTION
+========================= */
+
+#about {
+    padding: 80px 0;
+    background-color: #ededed;
+}
+
+/* Section Heading */
+
+#about h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 2.5rem;
+    color: #222;
+}
+
+/* =========================
+   ABOUT CONTENT LAYOUT
+========================= */
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 50px;
+
+    flex-wrap: wrap;
+}
+
+/* =========================
+   PROFILE IMAGE
+========================= */
+
+.about-image img {
+    width: 300px;
+    height: 300px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* =========================
+   ABOUT TEXT
+========================= */
+
+.about-text {
+    max-width: 600px;
+}
+
+.about-text h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #222;
+}
+
+.about-text p {
+    margin-bottom: 20px;
+    line-height: 1.7;
+    color: #444;
+}
+
+/* =========================
+   RESUME BUTTON
+========================= */
+
+.resume-button {
+    display: inline-block;
+
+    padding: 12px 24px;
+
+    background-color: #0077b3;
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 8px;
+
+    transition: background-color 0.3s ease;
+}
+
+/* Hover Effect */
+
+.resume-button:hover {
+    background-color: #005f8d;
+}
+
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-image img {
+        width: 220px;
+        height: 220px;
+    }
+
+    .about-text h3 {
+        font-size: 1.7rem;
+    }
+}

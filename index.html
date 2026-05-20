@@ -1,0 +1,543 @@
+<!-- Candice Patterson
+20 May 2026
+AI for Web Developers Module 3: Prepare files for Netlify deployment
+HTML creation using ChatGPT and hands-on changes -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!-- Allows special characters -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Mobile responsive -->
+    <title>My AI Assisted Web Development Projects</title> <!-- Browser tab title -->
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <!-- Connects the CSS file -->
+    <link rel="stylesheet" href="CSS/main.css">
+</head>
+<body>
+
+<!-- TOP NAVIGATION -->
+<nav class="navbar">
+
+    <!-- Website logo/title -->
+    <div class="logo">
+        My Portfolio
+    </div>
+
+    <!-- Navigation links -->
+    <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#project1">Project 1</a></li>
+        <li><a href="#project2">Project 2</a></li>
+        <li><a href="#project3">Project 3</a></li>
+        <li><a href="#project4">Project 4</a></li>
+        <li><a href="#project5">Project 5</a></li>
+        <li><a href="#project6">Project 6</a></li>
+    </ul>
+
+</nav>
+
+<!-- MAIN PAGE TITLE -->
+<header class="hero-section">
+
+    <h1>My AI Assisted Web Development Projects</h1>
+
+    <p>
+        A collection of beginner AI web development projects by Candice Patterson.
+    </p>
+
+</header>
+
+<!--
+  Challenge: Add content containers
+    * Use a prompt to ask ChatGPT how to create
+      containers for each section
+    * Add the suggested CSS to the project
+    * Update the HTML with containers for the
+      Projects, About, and Skills sections
+-->
+
+<section id="about">
+
+    <div class="container">
+
+        <h2>About Me</h2>
+
+        <div class="about-content">
+
+            <!-- Profile Image -->
+            <div class="about-image">
+                <img src="images/selfie.jpeg" alt="Portrait of Candice Patterson">
+            </div>
+
+            <!-- About Text -->
+            <div class="about-text">
+
+                <h3>Hello, I'm Candice!</h3>
+
+                <p>
+                    I am a web development and technology student passionate
+                    about creating responsive, interactive, and user-friendly
+                    websites and applications.
+                </p>
+
+                <p>
+                    I enjoy working with HTML, CSS, JavaScript, databases,
+                    and modern web technologies while continuously learning
+                    new skills and improving my development abilities.
+                </p>
+
+                <p>
+                    My goal is to combine creativity and problem-solving
+                    to build engaging digital experiences and professional
+                    portfolio projects.
+                </p>
+
+                <!-- Resume Button -->
+                <a href="resume.pdf" class="resume-button" target="_blank">
+                    View Resume
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section id="skills">
+
+    <div class="container">
+
+        <h2>My Skills</h2>
+
+        <div class="skills-grid">
+
+            <!-- HTML Skill -->
+            <div class="skill-card">
+
+                <h3>HTML</h3>
+
+                <p>
+                    Experienced in building structured, semantic, and
+                    accessible web pages using modern HTML5 practices.
+                </p>
+
+                <!-- Progress Bar -->
+                <div class="progress-bar">
+                    <div class="progress html-progress">90%</div>
+                </div>
+
+            </div>
+
+            <!-- CSS Skill -->
+            <div class="skill-card">
+
+                <h3>CSS</h3>
+
+                <p>
+                    Skilled in responsive layouts, Flexbox, Grid,
+                    animations, and modern visual design techniques.
+                </p>
+
+                <div class="progress-bar">
+                    <div class="progress css-progress">85%</div>
+                </div>
+
+            </div>
+
+            <!-- JavaScript Skill -->
+            <div class="skill-card">
+
+                <h3>JavaScript</h3>
+
+                <p>
+                    Comfortable creating interactive web applications,
+                    DOM manipulation, event handling, and dynamic features.
+                </p>
+
+                <div class="progress-bar">
+                    <div class="progress js-progress">80%</div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section id="projects">
+
+    <div class="container">
+
+        <h2>Projects</h2>
+<!-- PROJECT 1 -->
+<section class="project-section" id="project1">
+
+    <h2>Project 1 - Twitter Login Button</h2>
+
+    <p>
+        This project contains a Twitter-style login button along with the same button adjusted manually.
+    </p>
+
+    <!-- Button container -->
+    <div class="button-container">
+
+        <!-- Twitter button -->
+        <button class="twitter-button">
+            Login with Twitter
+        </button>
+
+        <!--
+        Challenge:
+        Turn the button into a "Login with GitHub" button.
+
+        This will require you to modify two lines of code in the CSS file
+        and one line of code in the HTML file.
+
+        PS: The color code for the background of the GitHub button
+        is #24292d.
+        -->
+
+        <!-- Second button -->
+        <button class="changed-button"> <!-- changed  -->
+            Login with GitHub <!-- changed  -->
+        </button>
+
+    </div>
+
+</section>
+
+<!-- Module 1 PROJECT 2 -->
+<section class="project-section" id="project2">
+
+    <h2>Project 2 - Hero Section</h2>
+
+    <p>This project asks ChatGPT to build a hero section for HoverChair, which is then tweaked manually for SmoothBowl instead with new colors, image, and text.</p>
+
+
+    <!-- Hero section container -->
+    <div class="hero-chair">
+
+        <!-- Chair image -->
+        <img src="images/smoothiebowl.jpg" alt="Smoothie Bowl" class="chair-image">
+
+        <!-- Main heading -->
+        <h2 class="hero-heading">
+            SmoothieBowl
+        </h2>
+
+        <!-- Subheading -->
+        <h3 class="hero-subheading">
+            Fresh and Delightful Smooth Bowls
+        </h3>
+
+        <!-- Description -->
+        <p class="hero-description">
+            SmoothBowls delivers fresh, colorful smoothie bowls packed with fruit,
+            nuts, and tropical flavors that make every bite feel like summer.
+        </p>
+
+        <!-- Call to action button -->
+        <a href="#" class="hero-button">
+            Explore SmoothieBowl
+        </a>
+
+    </div>
+
+</section>
+
+<!-- Module 1 PROJECT 3 -->
+<section class="project-section" id="project3">
+    <h2>Project 3 - Subscription Form</h2>
+
+    <p>This project was made using my own personal choice of wording for ChatGPT creating a subscription form.</p>
+    <!-- Subscription container -->
+    <div class="levelapp-container">
+
+        <!-- App image which for fun was created by ChatGPT and added later to the form -->
+        <img src="images/levelapp.png" alt="LevelApp App Preview" class="levelapp-image">
+        <!-- Main heading -->
+        <h2 class="levelapp-heading">
+            LevelApp — Get Your First Month FREE
+        </h2>
+
+        <!-- Description paragraph -->
+        <p class="levelapp-description">
+            LevelApp helps tweens and teens build real-world life skills through
+            games, activities, podcasts, videos, rewards, and guided challenges.
+            Parents can track progress while kids have fun learning confidence,
+            responsibility, and independence.
+        </p>
+
+        <!-- Subscription form -->
+        <form class="levelapp-form">
+
+            <!-- Email input -->
+            <input
+                    type="email"
+                    placeholder="Enter your email"
+                    required
+                    class="levelapp-input"
+            >
+
+            <!-- Submit button -->
+            <button type="submit" class="levelapp-button">
+                Get 1 Month FREE
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+<!-- Module 2 PROJECT 4 -->
+<section class="project-section" id="project4">
+    <h2>Project 4 - Signup Page</h2>
+
+    <p>Used a guided framework, which was adjusted to personalize a build request to ChatGPT and using innerHTML in JavaScript</p>
+    <!-- Art Gala container -->
+    <div class="artgala-container">
+
+        <!-- Main invitation heading -->
+        <h2 class="artgala-heading">
+            Become the Masterpiece 🎨
+        </h2>
+
+        <!-- Event date -->
+        <h3 class="artgala-date">
+            09 / 03 / 2026
+        </h3>
+
+        <!-- Short description -->
+        <p class="artgala-description">
+            Step into a living museum where guests transform into iconic portraits,
+            surreal masterpieces, and famous works of art. Enjoy music, fashion,
+            performances, and an unforgettable night celebrating creativity.
+        </p>
+
+        <!-- RSVP form -->
+        <form id="rsvp-form" class="rsvp-form">
+
+            <!-- Email field -->
+            <input
+                    type="email"
+                    placeholder="Enter your email"
+                    required
+                    class="rsvp-input"
+            >
+
+            <!-- Attendance selection -->
+            <select required class="rsvp-select" id="attendance">
+
+                <option value="">
+                    Will you attend?
+                </option>
+
+                <option value="yes">
+                    Yes, I’ll be there
+                </option>
+
+                <option value="no">
+                    Sorry, I can’t attend
+                </option>
+
+            </select>
+
+            <!-- Submit button -->
+            <button type="button" class="rsvp-button" id="rsvp-submit">
+                RSVP Now
+            </button>
+
+        </form>
+
+        <!-- Confirmation message area -->
+        <div id="confirmation-message" class="confirmation-message">
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Module 4 PROJECT 5 -->
+<section class="project-section" id="project5">
+    <h2>Project 5 - FaceBomp Game</h2>
+
+    <p>Built a "Whac-a-Mole" style game called "FaceBomp"</p>
+
+<section class="project-game-header">
+    <h1>😉 FaceBomp</h1>
+
+    <button id="startButton">Start Game</button>
+    <p id="score">Score: 0</p>
+
+    <div id="timer">Time left: <span id="time">30</span> seconds</div>
+    <div class="game-board">
+        <div class="hole">
+            <img src="images/face.jpeg" alt="Face 1">
+        </div>
+        <div class="hole">
+            <img src="images/face.jpeg" alt="Face 2">
+        </div>
+        <div class="hole">
+            <img src="images/face.jpeg" alt="Face 3">
+        </div>
+        <div class="hole">
+            <img src="images/face.jpeg" alt="Face 4">
+        </div>
+        <div class="hole">
+            <img src="images/face.jpeg" alt="Face 5">
+        </div>
+        <div class="hole">
+            <img src="images/face.jpeg" alt="Face 6">
+        </div>
+    </div>
+</section>
+</section>
+<!-- Module 4 PROJECT 6 -->
+<!-- 🌟 Challenge: add more projects, custom images, descriptions, and links to your live projects -->
+<section class="project-section" id="project6">
+    <h2>Project 6 - Slide Container</h2>
+
+    <p>A rotating visual of example projects</p>
+    <section class="project-slider-section">
+
+    <h2 class="slider-title">Featured Example Projects</h2>
+
+    <!-- Slideshow Container -->
+    <div class="slider-container">
+
+        <!-- Slide 1 -->
+        <div class="slide active fade">
+            <img src="images/project3.jpg" alt="Project 6">
+
+            <!-- Overlay Content -->
+            <div class="slide-content">
+                <h3>Weather Dashboard</h3>
+                <p>
+                    A responsive weather app that displays live forecasts
+                    using a weather API and dynamic search functionality.
+                </p>
+            </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="slide fade">
+            <img src="images/project2.jpg" alt="Project 2">
+
+            <div class="slide-content">
+                <h3>FaceBomp Game</h3>
+                <p>
+                    A fun Whac-a-Mole inspired browser game built with
+                    JavaScript, animations, and mobile touch support.
+                </p>
+            </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="slide fade">
+            <img src="images/project1.jpg" alt="Project 3">
+
+            <div class="slide-content">
+                <h3>Recipe Database</h3>
+                <p>
+                    A MongoDB-powered recipe application featuring search,
+                    indexing, and contributor management functionality.
+                </p>
+            </div>
+        </div>
+
+        <!-- Slide 4 -->
+        <div class="slide fade">
+            <img src="images/project1.jpg" alt="Project 4">
+
+            <div class="slide-content">
+                <h3>Another Project</h3>
+                <p>
+                    A project images I do not have yet loaded with other project pic.
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Dot Navigation -->
+    <div class="dots-container">
+
+        <span class="dot active-dot" onclick="currentSlide(0)"></span>
+
+        <span class="dot" onclick="currentSlide(1)"></span>
+
+        <span class="dot" onclick="currentSlide(2)"></span>
+
+        <span class="dot" onclick="currentSlide(3)"></span>
+
+    </div>
+</section>
+</section>
+
+<!-- =========================
+     FOOTER SECTION
+========================= -->
+
+<footer id="footer">
+
+    <div class="container">
+
+        <!-- Copyright -->
+        <p class="footer-text">
+            &copy; 2026 Candice Patterson. All Rights Reserved.
+        </p>
+
+        <!-- Social Media Links -->
+        <div class="social-icons">
+
+            <!-- LinkedIn -->
+            <a href="https://www.linkedin.com/"
+               target="_blank"
+               aria-label="LinkedIn">
+
+                <i class="fab fa-linkedin"></i>
+
+            </a>
+
+            <!-- Twitter / X -->
+            <a href="https://twitter.com/"
+               target="_blank"
+               aria-label="Twitter">
+
+                <i class="fab fa-twitter"></i>
+
+            </a>
+
+            <!-- Instagram -->
+            <a href="https://www.instagram.com/"
+               target="_blank"
+               aria-label="Instagram">
+
+                <i class="fab fa-instagram"></i>
+
+            </a>
+
+        </div>
+
+    </div>
+
+</footer>
+<!-- Connects sound files -->
+<audio id="bomp-sound" src="sounds/bomp.wav"></audio>
+<audio id="end-sound" src="sounds/game-end.wav"></audio>
+<audio id="high-sound" src="sounds/game-end_high.wav"></audio>
+<!-- Connects the JavaScript file -->
+<script src="JS/main.js"></script>
+</body>
+</html>
