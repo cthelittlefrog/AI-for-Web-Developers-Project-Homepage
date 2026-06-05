@@ -325,18 +325,20 @@ HTML creation using ChatGPT and hands-on changes -->
         </p>
 
         <!-- RSVP form -->
+        <!-- RSVP form -->
         <form id="rsvp-form" class="rsvp-form">
 
             <!-- Email field -->
             <input
                     type="email"
+                    name="email"
                     placeholder="Enter your email"
                     required
                     class="rsvp-input"
             >
 
             <!-- Attendance selection -->
-            <select required class="rsvp-select" id="attendance">
+            <select required class="rsvp-select" id="attendance" name="attendance">
 
                 <option value="">
                     Will you attend?
@@ -352,6 +354,17 @@ HTML creation using ChatGPT and hands-on changes -->
 
             </select>
 
+            <!-- Message field hidden until attending is selected -->
+            <div id="message-container" style="display: none;">
+                <textarea
+                        id="message-field"
+                        name="message"
+                        class="rsvp-input"
+                        placeholder="Leave a message for everyone..."
+                        rows="4"
+                ></textarea>
+            </div>
+
             <!-- Submit button -->
             <button type="button" class="rsvp-button" id="rsvp-submit">
                 RSVP Now
@@ -360,8 +373,12 @@ HTML creation using ChatGPT and hands-on changes -->
         </form>
 
         <!-- Confirmation message area -->
-        <div id="confirmation-message" class="confirmation-message">
+        <div id="confirmation-message" class="confirmation-message"></div>
 
+        <!-- Submitted messages from Firebase -->
+        <div id="show-list">
+            <h3>Guest Messages</h3>
+            <ul class="messages"></ul>
         </div>
 
     </div>
@@ -538,6 +555,6 @@ HTML creation using ChatGPT and hands-on changes -->
 <audio id="end-sound" src="sounds/game-end.wav"></audio>
 <audio id="high-sound" src="sounds/game-end_high.wav"></audio>
 <!-- Connects the JavaScript file -->
-<script src="JS/main.js"></script>
+<script type="module" src="JS/main.js"></script>
 </body>
 </html>
