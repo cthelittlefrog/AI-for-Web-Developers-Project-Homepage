@@ -390,6 +390,13 @@ body {
     background-repeat: no-repeat; /* Prevents repeating */
 }
 
+.messages {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    text-align: center;
+}
+
 /* Module 4 PROJECT 5 */
 button {
     background-color: #006bb3;
